@@ -30,7 +30,7 @@ $ pytest .
 Running tests localy takes a couple of seconds.
 
 ## Stage
-This application is deployed on AWS EC2 free t2.micro (1 CPU, 1 GB of RAM) instance without elastic IP. Current instance ip is 3.87.243.231 but as long as elastic IP is not connected this public ip may be changed. Please, let me know if you want to check out stage this ip is not reachable or tcp port 80 is not opened.
+This application is deployed on AWS EC2 free t2.micro (1 CPU, 1 GB of RAM) instance without elastic IP. Current instance ip is 3.87.243.231 but as long as elastic IP is not connected this public ip may be changed. Please, let me know if you want to check out the stage and this ip is not reachable or tcp port 80 is not opened.
 
 In order to insure that the deployed application works run tests with following commands:
 ```
