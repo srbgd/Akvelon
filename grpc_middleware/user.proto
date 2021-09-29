@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package user;
+
+service User {
+
+  rpc Create (CreateRequest) returns (CreateReply) {}
+
+  rpc Read (ReadRequest) returns (ReadReply) {}
+
+  rpc Update (UpdateRequest) returns (UpdateReply) {}
+
+  rpc Delete (DeleteRequest) returns (google.protobuf.Empty) {}
+}
+
+message CreateRequest {
+  string user_id = 1;
+  string first_name = 2;
+  string last_name = 3;
+  string email = 4;
+}
+
+message CreateReply {
+  string user_id = 1;
+}
+
+message ReadRequest {
+  string user_id = 1;
+}
+
+message ReadReply {
+  string user_id = 1;
+  string first_name = 2;
+  string last_name = 3;
+  string email = 4;
+}
+
+message UpdateRequest {
+  string user_id = 1;
+  optional string first_name = 2;
+  optional string last_name = 3;
+  optional string email = 4;
+}
+
+message UpdateReply {
+  string user_id = 1;
+  string first_name = 2;
+  string last_name = 3;
+  string email = 4;
+}
+
+message DeleteRequest {
+  string user_id = 1;
+}
