@@ -41,5 +41,6 @@ $ export FLASK_APP_URL="http://3.87.243.231:80";  pytest .
 Running tests against the stage takes approximatly 50 seconds. 
 You may see the logs from the stage in file `example.log`
 
-##gRPC
+## gRPC
+
 Added gRPC client and server in folder `grpc_middleware`. Now it's implemented in a very messy way. It should be heavily refactored and the folder should be restructured. Also, it's not a middleware yet because the server communicates only with the client through gRPC and doesn't forward requests to backend with REST. Nevertheless, it works.
